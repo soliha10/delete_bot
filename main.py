@@ -74,10 +74,6 @@ async def block_links(message: Message):
                 until_date=until_time
             )
 
-            await message.answer(
-                f"{message.from_user.full_name} link yuborgani uchun 1 soatga mute qilindi."
-            )
-
         except Exception as e:
             logging.warning(f"Could not restrict user: {e}")
 
